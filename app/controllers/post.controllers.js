@@ -4,7 +4,7 @@ let countId = 1;
 const postsArr = [];
 
 // Example
-export const createPost = (req, res) => {
+export const create = (req, res) => {
     const {body} = req.body;
     const post = {
         postId: countId.toString(),
@@ -21,22 +21,22 @@ export const createPost = (req, res) => {
     });
 };
 
-export const getPostArr = (req, res) => {
+export const viewAll = (req, res) => {
     res.json({});
 };
 
-export const getPost = (req, res) => {
+export const viewId = (req, res) => {
     res.json({});
 };
 
-export const editPost = (req, res) => {
+export const editId = (req, res) => {
     res.json({});
 };
 
-export const deletePost = (req, res) => {
+export const deleteId = (req, res) => {
     res.json({});
 };
 
-export const createReply = (req, res) => {
+export const replyPost = (req, res) => {
     res.json({});
 };
